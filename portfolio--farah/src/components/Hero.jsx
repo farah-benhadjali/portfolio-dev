@@ -17,8 +17,7 @@ const item = {
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-[#020617] overflow-hidden">
-      {/* Glow */}
+<section className="relative min-h-screen pt-20 md:pt-0 flex items-start md:items-center justify-center bg-[#020617] overflow-hidden">      {/* Glow */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#6366F1]/20 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#22D3EE]/20 rounded-full blur-3xl" />
 
