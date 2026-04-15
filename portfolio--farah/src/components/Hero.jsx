@@ -96,7 +96,7 @@ export default function Hero() {
           </Link>
 
           <a
-            href="/cv.pdf"
+            href="/CV_FarahBenhadjAli.pdf"
             download
             className="px-6 py-3 rounded-lg border border-[#6366F1] text-[#E0E7FF] hover:bg-[#6366F1]/20 transition"
           >
