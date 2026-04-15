@@ -1,30 +1,7 @@
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { Icon } from "@iconify/react";
-
-const socialLinks = [
-  {
-    name: "GitHub",
-    icon: "mdi:github",
-    href: "https://github.com/Hmoham404",
-    color: "#E0E7FF",
-    label: "GitHub",
-  },
-  {
-    name: "LinkedIn",
-    icon: "mdi:linkedin",
-    href: "https://www.linkedin.com/in/mohamed-lakhal-874ab1218/",
-    color: "#22D3EE",
-    label: "LinkedIn",
-  },
-  {
-    name: "Email",
-    icon: "mdi:email",
-    href: "mailto:Lakhalm300@gmail.com",
-    color: "#6366F1",
-    label: "Email",
-  },
-];
+const API_URL = import.meta.env.VITE_API_URL;
 
 export default function Contact() {
   const ref = useRef(null);
@@ -47,7 +24,7 @@ export default function Contact() {
     setStatus("sending");
 
     try {
-      const res = await fetch("http://localhost:5000/api/contact", {
+      const res = await fetch(`${API_URL}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
