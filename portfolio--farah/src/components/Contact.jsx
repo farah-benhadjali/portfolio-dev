@@ -29,7 +29,7 @@ export default function Contact() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(form),
       });
 
       if (!res.ok) throw new Error();
